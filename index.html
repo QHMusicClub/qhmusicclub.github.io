@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>quak</title>
+        <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700" rel="stylesheet" type="text/css"><!-- google fonts end -->
+        <script src="https://kit.fontawesome.com/3e2d5ff50d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="home">
+            <header>
+                <a href="#" class="logo">Quak</a>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contact" id="contact-button">Contact</a></li>
+                    <li><a href="#music" id="contact-button">Music</a></li>
+                </ul>
+            </header>
+            <section>
+                <h2 id="text">3AESN</h2>
+                <img src="./images/background.png" id="bgimg">
+            </section>
+        </div>
+        <div id="contact" class="center">
+            <div class="inner-divider-full"></div>
+            <h1 class="heading">Contact</h1>
+            <div class="inner-divider-half"></div>
+            <div class="info"> 
+                <img src="./images/cat.jpg" alt="quak" style="width: 100px;height: 100px;border-radius: 50%;">
+                <br>
+                <h2 class="name">quak</h2>
+                <br>
+                <p>
+                    <a class="links" href="https://www.facebook.com/quak91/" target="_blank">Facebook</a>
+                    <a class="links" href="https://www.instagram.com/poqpwppy/" target="_blank">Instagram</a>
+                    <a class="links" href="https://github.com/quak910" target="_blank">Github</a>
+                </p>
+            </div>
+        </div>
+        <div id="music" class="center">
+            <div class="inner-divider-full"></div>
+            <h1 class="heading">Music Controller</h1>
+            <div class="inner-divider-half"></div>
+            <h4 class="music-heading">Now playing: </h4><br><h4 id="song-name" class="music-heading"></h4>
+                <div class="inner-divider-half"></div>
+                <audio autoplay id="bgmusic"></audio>
+                <span id="current-time" class="music-heading">0:00</span>
+                <div id="timeline">
+                    <div id="playhead"></div>
+                </div>
+                <span id="duration" class="music-heading">0:00</span>
+                <div class="inner-divider-half"></div>
+                <button class="music-heading music-button" id="prev-icon">Prev</button>
+                <button class="music-heading music-button" id="play-icon">PLay</button>
+                <button class="music-heading music-button" id="pause-icon">Pause</button>
+                <button class="music-heading music-button" id="next-icon">Next</button>
+                <div class="inner-divider-half"></div>
+                <button class="music-heading music-button" id="loop-icon">Loop: Off</button>
+        </div>        
+        <script src="./js/script.js"></script>
+        <script src="./js/music.js"></script>
+    </body>
+</html>
