@@ -13,7 +13,7 @@ html {
 
 body {
     min-height: 100vh;
-    background: linear-gradient(#2b1055, #7597de);
+    background: black;
 }
 
 header {
@@ -37,7 +37,6 @@ header .logo {
 }
 
 header ul {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -80,6 +79,7 @@ section {
 }
 
 section img {
+    opacity: 0.5;
     position: fixed;
     top: 0;
     left: 0;
@@ -107,6 +107,21 @@ section img {
     transition: 1.5s;
     background: rgba(0,0,0,0.7);
 }
+
+#blogs {
+    display: block;
+    opacity: 1;
+    top: 0px;
+    left: 0;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    text-align: center;
+    transition: 1.5s;
+    background: rgba(0,0,0,0.7);
+}
+
 
 #music {
     display: block;
@@ -146,9 +161,9 @@ section img {
     align-items: center;
     font-weight: 700;
     position: relative;
-    color: #C576F6;
+    color: #fff;
     text-decoration: none;
-    background: #fff;
+    background: #C46200;
     width: 100px;
     height: 30px;
     border-radius: 20px;
@@ -158,6 +173,8 @@ section img {
 
 .links:hover {
     opacity: 1;
+    color: #C46200;
+    background: #fff;
 }
 
 #text {
@@ -166,7 +183,20 @@ section img {
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
-    text-shadow: 5px 5px black;
+    text-shadow: 0px 0px black;
+    transition: all 0.3s ease 0s;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 20px #C46200, 0 0 30px #C46200, 0 0 40px #C46200, 0 0 50px #C46200, 0 0 60px #C46200;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 15px #F27900, 0 0 25px #F27900, 0 0 35px #F27900, 0 0 45px #F27900, 0 0 55px #F27900, 0 0 65px #F27900;
+    }
 }
 
 .inner-divider-half {
@@ -244,7 +274,7 @@ section img {
     border: 0;
     border-radius: 25px;
     background: inherit;
-    background-color: #C576F6;
+    background-color: #C46200;
     cursor: pointer;
     outline: none;
     width: 60px;
@@ -255,4 +285,29 @@ section img {
 
 .music-button:hover {
   opacity: 1;
+}
+
+.back-home {
+    position: fixed;
+    float: right;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    border-radius: 20px;
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    outline: none;
+    color: #2b1055;
+    background: #fff;
+    z-index: 100000;
+    margin-left: 20px;
+    white-space: nowrap;
+    text-align: left !important;
+    bottom: 20px;
+    right: 20px;
+}
+
+.back-home:hover {
+    opacity: 1;
 }

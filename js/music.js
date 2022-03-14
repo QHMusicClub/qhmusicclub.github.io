@@ -81,9 +81,9 @@ music.addEventListener("canplaythrough", function () {
 //Playlist functions
 var tracks = [
   {"track":1,"name":"Về Những Ngày Đã Cũ... / 90's Session","src":"./music/venhungngaydacu.mp3"},
-  {"track":2,"name":"PIXEL NEKO - CÔ NÀNG KHÁC NGƯỜI [FEAT. NGER (MCK) & WXRDIE]","src":"./music/conangkhacnguoi.mp3"},
-  {"track":3,"name":"MCK x TLinh - Chỉ một đêm nữa thôi","src":"./music/chimotdemnuathoi.mp3"},
-  {"track":4,"name":"Tam Giác - Anh Phan ft Low G & Larria","src":"./music/tamgiac.mp3"},
+  {"track":2,"name":"Anh biết - Nger","src":"./music/anhbiet.mp3"},
+  {"track":3,"name":"Anh đã quen ở bên cạnh em - Nger","src":"./music/anhdaquenobencanhem.mp3"},
+  {"track":4,"name":"Yêu em qua những dòng tin nhắn - Nger x Nân","src":"./music/ieuiemquanhungdongtinnhan.mp3"},
   {"track":5,"name":"Lần Cuối (/ljnk. ✨ cover)","src":"./music/lancuoi.mp3"}
 ];
 
