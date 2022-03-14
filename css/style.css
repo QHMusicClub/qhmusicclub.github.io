@@ -183,21 +183,8 @@ section img {
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
-    text-shadow: 0px 0px black;
-    transition: all 0.3s ease 0s;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 20px #C46200, 0 0 30px #C46200, 0 0 40px #C46200, 0 0 50px #C46200, 0 0 60px #C46200;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 15px #F27900, 0 0 25px #F27900, 0 0 35px #F27900, 0 0 45px #F27900, 0 0 55px #F27900, 0 0 65px #F27900;
-    }
-}
+    text-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 20px #C46200, 0 0 30px #C46200, 0 0 40px #C46200, 0 0 50px #C46200, 0 0 60px #C46200;
+}  
 
 .inner-divider-half {
     height:50px
